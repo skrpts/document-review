@@ -29,9 +29,16 @@ execution:
   - skill: "summary-synthesis"
     step_type: "synthesis"
     prompt: "synthesise-summary"
+    context:
+      voice_profile: ""
+      summary_depth: ""
+      audience: ""
   - skill: "language-polish"
     step_type: "content"
     prompt: "polish-summary"
+    context:
+      voice_profile: ""
+      grammar_strictness: ""
 ---
 
 ## Overview
