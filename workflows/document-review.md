@@ -30,15 +30,15 @@ execution:
     step_type: "synthesis"
     prompt: "synthesise-summary"
     context:
-      voice_profile: ""
-      summary_depth: ""
-      audience: ""
+      voice_profile: "Neutral professional tone"
+      summary_depth: "Standard"
+      audience: "General professional audience"
   - skill: "language-polish"
     step_type: "content"
     prompt: "polish-summary"
     context:
-      voice_profile: ""
-      grammar_strictness: ""
+      voice_profile: "Neutral professional tone"
+      grammar_strictness: "Professional"
 ---
 
 ## Overview
