@@ -2,7 +2,7 @@
 type: service
 id: llm-service
 title: LLM Service
-description: "Language model service for document analysis, summarisation, and action item extraction"
+description: "Language model service for analysis, synthesis, and document generation"
 tags: [Production, Tested]
 connections: []
 metadata:
@@ -12,13 +12,17 @@ metadata:
 
 ## LLM Service
 
-This skrpt uses a language model for analytical and generative tasks. The LLM handles document structure analysis, key point extraction, and summary synthesis.
+This skrpt uses a language model for analytical and generative tasks. The LLM handles structured analysis, content synthesis, document generation, and quality validation across each stage of the workflow.
+
+### Usage Pattern
+
+The LLM is invoked at each stage of the pipeline. Earlier stages produce structured analysis (frameworks, assessments, breakdowns), while later stages synthesise outputs into coherent documents. The final stage is typically the most token-intensive, requiring cross-referencing across all previous outputs.
 
 ### Configuration
 
-- **Temperature:** 0.2 for document analysis, 0.5 for summary synthesis
-- **Max tokens:** 4,000 for analysis, 6,000 for synthesis
-- **Context window:** The analysis step receives the full document. The synthesis step receives the analysis output.
+- **Temperature:** 0.3 for structured analysis tasks, 0.5 for narrative and synthesis tasks
+- **Max tokens:** 4,000 per invocation, 8,000–10,000 for final assembly stages
+- **Context window:** Each stage receives the outputs of all previous stages. The assembly stage requires the full context window.
 
 ### Requirements
 
