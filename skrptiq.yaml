@@ -3,8 +3,8 @@ id: "e2bdc4ae-9445-4cb9-8d81-14bce9f967cb"
 name: "document-review"
 display_name: "Document Review"
 description: "Extracts key points, decisions, and action items from any document — summarised in your voice for your audience"
-version: "1.0.3"
-engine: ">=1.0.0"
+version: "1.0.4"
+engine: ">=0.1.0"
 
 # --- Attribution ---
 author:
