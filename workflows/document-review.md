@@ -7,7 +7,7 @@ tags: [Production, Quality]
 connections:
   - target: document-analysis
     type: uses
-  - target: summary-synthesis
+  - target: synthesise-document-summary
     type: uses
   - target: language-polish
     type: uses
@@ -20,13 +20,13 @@ metadata:
 output_step: "language-polish"
 composite_steps:
   - "document-analysis"
-  - "summary-synthesis"
+  - "synthesise-document-summary"
   - "language-polish"
 execution:
   - skill: "document-analysis"
     step_type: "generation"
     prompt: "analyse-document"
-  - skill: "summary-synthesis"
+  - skill: "synthesise-document-summary"
     step_type: "synthesis"
     prompt: "synthesise-summary"
     context:

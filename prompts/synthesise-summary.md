@@ -5,7 +5,7 @@ title: Synthesise Summary
 description: "Produces a reader-ready summary from the structured analysis"
 tags: [Production, Quality]
 connections:
-  - target: summary-synthesis
+  - target: synthesise-document-summary
     type: derived_from
 metadata:
   output_format: markdown
