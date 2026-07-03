@@ -3,7 +3,7 @@ id: "24de5b91-75c4-459f-b1d0-1af59a80fd47"
 name: "document-review"
 display_name: "Document Review"
 description: "Extracts key points, decisions, and action items from any document — summarised in your voice for your audience"
-version: "1.0.12"
+version: "1.0.13"
 engine: ">=0.1.0"
 
 # --- Attribution ---
@@ -53,3 +53,17 @@ contents:
   documents: 0
   assets: 0
   total: 5
+
+security:
+  status: "pass"
+  scanned_at: "2026-07-03T11:01:34.708Z"
+  scanner_version: "3.3.0"
+  syntactic: "pass"
+  structural: "pass"
+  detected:
+    services: ["llm-service"]
+    permissions: []
+    data_handling: []
+  undeclared: []
+  warnings: []
+  report_url: "https://hub.skrptiq.ai/skrpts/document-review/security"

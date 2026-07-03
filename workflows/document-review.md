@@ -26,9 +26,11 @@ execution:
   - skill: "document-analysis"
     step_type: "generation"
     prompt: "analyse-document"
+    output: { name: "analysis", type: "text" }
   - skill: "synthesise-document-summary"
     step_type: "synthesis"
     prompt: "synthesise-summary"
+    output: { name: "summary", type: "text" }
     context:
       voice_profile: "Neutral professional tone"
       summary_depth: "Standard"
@@ -36,6 +38,7 @@ execution:
   - skill: "language-polish"
     step_type: "content"
     prompt: "polish-summary"
+    output: { name: "polished_summary", type: "text" }
     context:
       voice_profile: "Neutral professional tone"
       grammar_strictness: "Professional"
