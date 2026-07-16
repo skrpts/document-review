@@ -1,7 +1,7 @@
 ---
 type: prompt
 id: synthesise-summary
-title: Synthesise Summary
+title: Synthesize Summary
 description: "Produces a reader-ready summary from the structured analysis"
 tags: [Production, Quality]
 connections:

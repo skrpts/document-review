@@ -14,7 +14,7 @@ metadata:
 
 ## Purpose
 
-Applies final language polish to the synthesised summary.
+Applies final language polish to the synthesized summary.
 
 ## Voice Profile
 

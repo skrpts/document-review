@@ -2,7 +2,7 @@
 type: workflow
 id: document-review
 title: Document Review
-description: "Analyses a document, extracts key points and action items, and produces a summary tailored to your audience"
+description: "Analyzes a document, extracts key points and action items, and produces a summary tailored to your audience"
 tags: [Production, Quality]
 connections:
   - target: document-analysis

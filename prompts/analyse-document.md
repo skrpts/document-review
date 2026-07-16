@@ -1,7 +1,7 @@
 ---
 type: prompt
 id: analyse-document
-title: Analyse Document
+title: Analyze Document
 description: "Extracts structure, key points, decisions, and action items from a document"
 tags: [Production, Quality]
 inputs:
@@ -28,7 +28,7 @@ metadata:
 
 ## Purpose
 
-Analyses a document and produces a structured extraction of its key content.
+Analyzes a document and produces a structured extraction of its key content.
 
 ## Prompt
 
@@ -38,7 +38,7 @@ You are a document analysis agent. Read the document below and extract a structu
 
 {{input.review_focus}}
 
-If a review focus is specified above, prioritise that category in your analysis. If not, give equal weight to all categories.
+If a review focus is specified above, prioritize that category in your analysis. If not, give equal weight to all categories.
 
 ### What to Extract
 
@@ -55,4 +55,4 @@ If a review focus is specified above, prioritise that category in your analysis.
 
 ### Output Format
 
-Return a structured object with clearly labelled sections for each category. Use bullet points within each section. If a category has no entries (e.g. no action items in a research paper), note "None identified" rather than omitting the section.
+Return a structured object with clearly labeled sections for each category. Use bullet points within each section. If a category has no entries (e.g. no action items in a research paper), note "None identified" rather than omitting the section.
